@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ribbon_menu_home" android:title="Micro-Market Test" android:icon="@drawable/listview"></item>
+    <item android:id="@+id/ribbon_menu_home2" android:title="Macro-Market Test" android:icon="@drawable/listview"></item>
+    <item android:id="@+id/ribbon_menu_home3" android:title="Micro-Industry Test" android:icon="@drawable/listview"></item>
+    <item android:id="@+id/ribbon_menu_home4" android:title="Macro Industry Test" android:icon="@drawable/listview"></item>
+    <item android:id="@+id/ribbon_menu_home5" android:title="Mission Test" android:icon="@drawable/listview"></item>
+    <item android:id="@+id/ribbon_menu_home6" android:title="Ability to Execute Test" android:icon="@drawable/listview"></item>
+    <item android:id="@+id/ribbon_menu_home7" android:title="Connectedness Test" android:icon="@drawable/listview"></item>
+</menu>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#4b4b4b"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#333333"
+                android:clickable="true"
+                android:onClick="toggleSideMenu"
+                android:padding="4dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/threelines" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THE NEW BUSINESS"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="ROAD TEST"
+                    android:textColor="#b6d8d7" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            style="@style/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="showDialog" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="4"
+	            android:orientation="vertical"
+	            android:padding="10dp" >
+
+	            <TextView
+	                android:id="@+id/chaptername"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Ability to Execute Test"
+	                android:textColor="#94c8d3"
+	                android:textSize="24dp" />
+
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="50dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/border_left"
+	            android:clickable="true"
+	            android:onClick="showJudgement"
+	            android:orientation="vertical" >
+
+	            <ImageView
+	                android:id="@+id/imageView2"
+	                android:layout_width="32dp"
+	                android:layout_height="32dp"
+	                android:layout_gravity="center_vertical|center_horizontal"
+	                android:layout_marginTop="9dp"
+	                android:scaleType="fitXY"
+	                android:src="@drawable/note_icon" />
+
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#5BA0A0"
+            android:orientation="horizontal"
+            android:paddingTop="2dp" >
+
+            <RelativeLayout
+                style="@style/ratingwrapper">
+
+                <Button
+                    android:id="@+id/vunattractive"
+                    style="@style/ratingwrapperbutton"
+                    android:text="Very Unattractive"
+                    android:tag="1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ratingwrapper">
+
+                <Button
+                    android:id="@+id/unattractive"
+                    style="@style/ratingwrapperbutton"
+                    android:text="Somewhat Unattractive"
+                    android:tag="2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+               style="@style/ratingwrapper">
+
+                <Button
+                    android:id="@+id/mixed"
+                    style="@style/ratingwrapperbutton"
+                    android:text="Mixed"
+                    android:tag="3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ratingwrapper">
+
+                <Button
+                    android:id="@+id/attractive"
+                    style="@style/ratingwrapperbutton"
+                    android:text="Somewhat Attractive"
+                    android:tag="4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ratingwrapper">
+
+                <Button
+                    android:id="@+id/vattractive"
+                    style="@style/ratingwrapperbutton"
+                    android:text="Very Attractive"
+                    android:tag="5" />    
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearlayout1"
+            android:layout_below="@+id/linearLayout5"
+            android:scrollbars="none"
+            android:padding="10dp" />
+        
+    </RelativeLayout>
+    
+    <com.darvds.ribbonmenu.RibbonMenuView
+        android:id="@+id/ribbonMenuView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </com.darvds.ribbonmenu.RibbonMenuView>
+
+    
+
+</FrameLayout>

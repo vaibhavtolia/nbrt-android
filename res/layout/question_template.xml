@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:paddingLeft="4dp" >
+
+    <TextView
+        android:id="@+id/ques"
+        style="@style/actionlayoutquestion"
+        android:text="question is this is how ?" />
+
+    <LinearLayout
+        style="@style/actionlayoutparent"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/qtext"
+            style="@style/actionlayout"
+            android:clickable="true"
+            android:onClick="takeNote" >
+
+            <ImageView
+                style="@style/actionlayoutimage"
+                android:src="@drawable/text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/actionlayout"
+            android:id="@+id/qmedia"
+            android:clickable="true"
+            android:onClick="takeCameraInput" >
+
+            <ImageView
+                style="@style/actionlayoutimage"
+                android:scaleType="center"
+                android:src="@drawable/camera" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/actionlayout"
+            android:id="@+id/qaudio"
+            android:clickable="true"
+            android:onClick="takeAudioInput" >
+
+            <ImageView
+                style="@style/actionlayoutimage"
+                android:src="@drawable/audio" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/riskactionlayout"
+            android:id="@+id/qrisk"
+            android:clickable="true"
+            android:onClick="takeRisk" >
+
+            <TextView style="@style/riskactionlayouttext" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
